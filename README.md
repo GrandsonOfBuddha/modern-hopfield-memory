@@ -29,7 +29,7 @@ The report is in [`report/report.pdf`](report/report.pdf) and the slides are in 
 | Synapse cost | Two-layer modern/dense networks need N synapses per memory. At the synapse budget of a classical network they store 0.5N instead of 0.12N memories, a constant factor of about 4, not an exponential gain. |
 | MNIST | The classical network fails at K=10 by falling into one spurious "average digit". With β ≥ 300 the modern network equals a perfect nearest-neighbour lookup up to 20 000 digits. Blunt models make *blends*; sharp models make *mix-ups* with real digits. |
 | Words | Hetero-association with unrelated pairs is **easier** than auto-association (dense n=4: 1371 vs 1040). Related pairs are hardest (702). Iterating the dynamics never helped. |
-| DRM | On GloVe vectors a blunt modern network (β≈3) falsely recalls the lure on 48% of lists (humans: 46%). False recall grows with list length, as in Robinson & Roediger (1997). From β ≥ 10 it disappears. |
+| DRM | On GloVe vectors a blunt modern network (β≈3) falsely recalls the lure with probability 0.48 (humans: 0.46). False recall grows with list length, as in Robinson & Roediger (1997). From β ≥ 10 it disappears. |
 
 ---
 
