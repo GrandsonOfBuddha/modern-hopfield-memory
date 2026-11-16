@@ -1,0 +1,2245 @@
+{
+ "N": 512,
+ "list_lengths": [
+  3,
+  6,
+  9,
+  12,
+  15
+ ],
+ "code_seeds": [
+  0,
+  1,
+  2
+ ],
+ "starts": 40,
+ "lure_centroid": {
+  "sleep": {
+   "cosine": 0.7576804828873556,
+   "rank_overall": 1
+  },
+  "chair": {
+   "cosine": 0.734902727179142,
+   "rank_overall": 5
+  },
+  "doctor": {
+   "cosine": 0.8446504520937994,
+   "rank_overall": 1
+  },
+  "sweet": {
+   "cosine": 0.7863062469508004,
+   "rank_overall": 4
+  },
+  "mountain": {
+   "cosine": 0.8824643376934795,
+   "rank_overall": 1
+  },
+  "needle": {
+   "cosine": 0.7843186077447966,
+   "rank_overall": 1
+  },
+  "rough": {
+   "cosine": 0.8217946115263887,
+   "rank_overall": 1
+  },
+  "slow": {
+   "cosine": 0.8897084964206582,
+   "rank_overall": 1
+  },
+  "river": {
+   "cosine": 0.8076048797852837,
+   "rank_overall": 1
+  },
+  "window": {
+   "cosine": 0.8786149776481705,
+   "rank_overall": 1
+  },
+  "soft": {
+   "cosine": 0.7412059200362076,
+   "rank_overall": 2
+  },
+  "cold": {
+   "cosine": 0.8406398361196626,
+   "rank_overall": 1
+  },
+  "music": {
+   "cosine": 0.8664327207606433,
+   "rank_overall": 1
+  },
+  "man": {
+   "cosine": 0.8618625918109908,
+   "rank_overall": 1
+  },
+  "king": {
+   "cosine": 0.85489735771749,
+   "rank_overall": 1
+  },
+  "bread": {
+   "cosine": 0.8920859605349802,
+   "rank_overall": 1
+  },
+  "spider": {
+   "cosine": 0.6929958861782757,
+   "rank_overall": 4
+  },
+  "thief": {
+   "cosine": 0.6845694414024759,
+   "rank_overall": 5
+  },
+  "foot": {
+   "cosine": 0.7661194411542795,
+   "rank_overall": 2
+  },
+  "girl": {
+   "cosine": 0.8590202535653667,
+   "rank_overall": 1
+  },
+  "high": {
+   "cosine": 0.7466690156776498,
+   "rank_overall": 6
+  },
+  "anger": {
+   "cosine": 0.8456016968855241,
+   "rank_overall": 2
+  },
+  "black": {
+   "cosine": 0.8365410833705207,
+   "rank_overall": 1
+  },
+  "cup": {
+   "cosine": 0.41455735285664874,
+   "rank_overall": 791
+  },
+  "fruit": {
+   "cosine": 0.8502719183637129,
+   "rank_overall": 1
+  },
+  "smell": {
+   "cosine": 0.8513408029353752,
+   "rank_overall": 1
+  },
+  "shirt": {
+   "cosine": 0.8590263385045523,
+   "rank_overall": 3
+  },
+  "trash": {
+   "cosine": 0.8745912385846751,
+   "rank_overall": 2
+  },
+  "car": {
+   "cosine": 0.9298593634038512,
+   "rank_overall": 1
+  },
+  "lion": {
+   "cosine": 0.7402808812949356,
+   "rank_overall": 1
+  },
+  "pen": {
+   "cosine": 0.6651894006156791,
+   "rank_overall": 6
+  }
+ },
+ "results": [
+  {
+   "model": "Classical",
+   "spec": {
+    "kind": "classical",
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 0.5043010752688172,
+     "lure": 0.0,
+     "other": 0.4956989247311828
+    },
+    "6": {
+     "veridical": 0.5021505376344086,
+     "lure": 0.0005376344086021505,
+     "other": 0.49731182795698925
+    },
+    "9": {
+     "veridical": 0.5008064516129033,
+     "lure": 0.0024193548387096775,
+     "other": 0.4967741935483871
+    },
+    "12": {
+     "veridical": 0.46559139784946235,
+     "lure": 0.020967741935483872,
+     "other": 0.5134408602150538
+    },
+    "15": {
+     "veridical": 0.4720430107526882,
+     "lure": 0.019623655913978494,
+     "other": 0.5083333333333333
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.125,
+    "window": 0.11666666666666667,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.19166666666666668,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.175,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.3089605734767026,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 1.1908165716355845,
+    "studied_minus_unrelated": 1.4079483633827563
+   },
+   "examples_k15": {
+    "sleep": {
+     "iran": 23,
+     "snooze": 14,
+     "both": 3
+    },
+    "window": {
+     "concerned": 21,
+     "door": 16,
+     "bnp": 3
+    },
+    "king": {
+     "queen": 23,
+     "databases": 17
+    },
+    "cup": {
+     "completion": 22,
+     "coffee": 18
+    }
+   }
+  },
+  {
+   "model": "Dense n=3",
+   "spec": {
+    "kind": "dense",
+    "n": 3,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.9994623655913979,
+     "lure": 0.0,
+     "other": 0.0005376344086021505
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 0.9973118279569892,
+     "lure": 0.0,
+     "other": 0.002688172043010753
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.022222222222222223,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.5153391245872743,
+    "studied_minus_unrelated": 1.16052892229463
+   },
+   "examples_k15": {
+    "sleep": {
+     "snooze": 13,
+     "peace": 4,
+     "awake": 3,
+     "drowsy": 3,
+     "slumber": 3
+    },
+    "window": {
+     "door": 8,
+     "frame": 5,
+     "glass": 5,
+     "sill": 5,
+     "sash": 3
+    },
+    "king": {
+     "queen": 30,
+     "dictator": 2,
+     "england": 2,
+     "leader": 2,
+     "palace": 2
+    },
+    "cup": {
+     "coffee": 11,
+     "saucer": 5,
+     "coaster": 4,
+     "soup": 4,
+     "drink": 2
+    }
+   }
+  },
+  {
+   "model": "Dense n=4",
+   "spec": {
+    "kind": "dense",
+    "n": 4,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 0.49032258064516127,
+     "lure": 0.0,
+     "other": 0.5096774193548387
+    },
+    "6": {
+     "veridical": 0.4889784946236559,
+     "lure": 0.0,
+     "other": 0.511021505376344
+    },
+    "9": {
+     "veridical": 0.49650537634408604,
+     "lure": 0.0,
+     "other": 0.503494623655914
+    },
+    "12": {
+     "veridical": 0.4956989247311828,
+     "lure": 0.0,
+     "other": 0.5043010752688172
+    },
+    "15": {
+     "veridical": 0.4935483870967742,
+     "lure": 0.0,
+     "other": 0.5064516129032258
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.23108250201649708,
+    "studied_minus_unrelated": 1.0662106062096999
+   },
+   "examples_k15": {
+    "sleep": {
+     "attorney": 4,
+     "drowsy": 4,
+     "substitutes": 4,
+     "designs": 3,
+     "exciting": 3
+    },
+    "window": {
+     "jewish": 3,
+     "labour": 3,
+     "screen": 3,
+     "sill": 3,
+     "cain": 2
+    },
+    "king": {
+     "intentionally": 5,
+     "monarch": 3,
+     "queen": 3,
+     "throne": 3,
+     "england": 2
+    },
+    "cup": {
+     "predecessors": 4,
+     "coaster": 3,
+     "straw": 3,
+     "careers": 2,
+     "goblet": 2
+    }
+   }
+  },
+  {
+   "model": "Dense n=8",
+   "spec": {
+    "kind": "dense",
+    "n": 8,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 0.4889784946236559,
+     "lure": 0.0,
+     "other": 0.511021505376344
+    },
+    "6": {
+     "veridical": 0.49032258064516127,
+     "lure": 0.0,
+     "other": 0.5096774193548387
+    },
+    "9": {
+     "veridical": 0.49946236559139784,
+     "lure": 0.0,
+     "other": 0.5005376344086021
+    },
+    "12": {
+     "veridical": 0.4946236559139785,
+     "lure": 0.0,
+     "other": 0.5053763440860215
+    },
+    "15": {
+     "veridical": 0.4922043010752688,
+     "lure": 0.0,
+     "other": 0.5077956989247312
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.0173213509671839,
+    "studied_minus_unrelated": 1.003927993653226
+   },
+   "examples_k15": {
+    "sleep": {
+     "attorney": 4,
+     "drowsy": 3,
+     "exciting": 3,
+     "peace": 3,
+     "slumber": 3
+    },
+    "window": {
+     "sammy": 4,
+     "cain": 3,
+     "labour": 3,
+     "screen": 3,
+     "breeze": 2
+    },
+    "king": {
+     "intentionally": 4,
+     "leader": 4,
+     "monarch": 3,
+     "palace": 3,
+     "crown": 2
+    },
+    "cup": {
+     "predecessors": 5,
+     "coaster": 3,
+     "heightened": 3,
+     "local": 3,
+     "saucer": 3
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=1 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 1,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.41935483870967744,
+     "lure": 0.2903225806451613,
+     "other": 0.2903225806451613
+    },
+    "9": {
+     "veridical": 0.3548387096774194,
+     "lure": 0.5483870967741935,
+     "other": 0.0967741935483871
+    },
+    "12": {
+     "veridical": 0.2903225806451613,
+     "lure": 0.5161290322580645,
+     "other": 0.1935483870967742
+    },
+    "15": {
+     "veridical": 0.3225806451612903,
+     "lure": 0.6129032258064516,
+     "other": 0.06451612903225806
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 1.0,
+    "chair": 0.0,
+    "doctor": 1.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 1.0,
+    "rough": 1.0,
+    "slow": 1.0,
+    "river": 1.0,
+    "window": 1.0,
+    "soft": 0.0,
+    "cold": 1.0,
+    "music": 1.0,
+    "man": 1.0,
+    "king": 1.0,
+    "bread": 1.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 1.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 1.0,
+    "cup": 0.0,
+    "fruit": 1.0,
+    "smell": 1.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 1.0,
+    "lion": 1.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.9118279569892476,
+    "pct_studied_below_unrelated": 0.08817204301075268,
+    "lure_minus_unrelated": 0.26796137839822065,
+    "studied_minus_unrelated": 0.16717778843528033
+   },
+   "examples_k15": {
+    "sleep": {
+     "sleep": 40
+    },
+    "window": {
+     "window": 40
+    },
+    "king": {
+     "king": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=2 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 2,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.45161290322580644,
+     "lure": 0.25806451612903225,
+     "other": 0.2903225806451613
+    },
+    "9": {
+     "veridical": 0.41935483870967744,
+     "lure": 0.5161290322580645,
+     "other": 0.06451612903225806
+    },
+    "12": {
+     "veridical": 0.41935483870967744,
+     "lure": 0.41935483870967744,
+     "other": 0.16129032258064516
+    },
+    "15": {
+     "veridical": 0.3548387096774194,
+     "lure": 0.5483870967741935,
+     "other": 0.0967741935483871
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 1.0,
+    "chair": 0.0,
+    "doctor": 1.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 1.0,
+    "rough": 1.0,
+    "slow": 1.0,
+    "river": 1.0,
+    "window": 1.0,
+    "soft": 0.0,
+    "cold": 1.0,
+    "music": 1.0,
+    "man": 0.0,
+    "king": 1.0,
+    "bread": 1.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 1.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 1.0,
+    "cup": 0.0,
+    "fruit": 1.0,
+    "smell": 1.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 1.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.8645161290322582,
+    "pct_studied_below_unrelated": 0.05591397849462365,
+    "lure_minus_unrelated": 0.2701356693116021,
+    "studied_minus_unrelated": 0.1928490897129926
+   },
+   "examples_k15": {
+    "sleep": {
+     "sleep": 40
+    },
+    "window": {
+     "window": 40
+    },
+    "king": {
+     "king": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=3 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 3,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.6129032258064516,
+     "lure": 0.16129032258064516,
+     "other": 0.22580645161290322
+    },
+    "9": {
+     "veridical": 0.4838709677419355,
+     "lure": 0.4481182795698925,
+     "other": 0.06801075268817204
+    },
+    "12": {
+     "veridical": 0.5161290322580645,
+     "lure": 0.3870967741935484,
+     "other": 0.0967741935483871
+    },
+    "15": {
+     "veridical": 0.45161290322580644,
+     "lure": 0.4838709677419355,
+     "other": 0.06451612903225806
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 1.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 1.0,
+    "rough": 1.0,
+    "slow": 1.0,
+    "river": 1.0,
+    "window": 1.0,
+    "soft": 0.0,
+    "cold": 1.0,
+    "music": 1.0,
+    "man": 0.0,
+    "king": 1.0,
+    "bread": 1.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 1.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 1.0,
+    "cup": 0.0,
+    "fruit": 1.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 1.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.7333333333333335,
+    "pct_studied_below_unrelated": 0.03225806451612904,
+    "lure_minus_unrelated": 0.27209240210843094,
+    "studied_minus_unrelated": 0.2252511715272482
+   },
+   "examples_k15": {
+    "sleep": {
+     "sleep": 40
+    },
+    "window": {
+     "window": 40
+    },
+    "king": {
+     "king": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=5 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 5,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 0.999731182795699,
+     "lure": 0.00026881720430107527,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.9330645161290323,
+     "lure": 0.032795698924731186,
+     "other": 0.03413978494623656
+    },
+    "9": {
+     "veridical": 0.8344086021505376,
+     "lure": 0.1650537634408602,
+     "other": 0.0005376344086021505
+    },
+    "12": {
+     "veridical": 0.7728494623655914,
+     "lure": 0.19489247311827956,
+     "other": 0.03225806451612903
+    },
+    "15": {
+     "veridical": 0.6451612903225806,
+     "lure": 0.3225806451612903,
+     "other": 0.03225806451612903
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 0.0,
+    "rough": 1.0,
+    "slow": 1.0,
+    "river": 1.0,
+    "window": 1.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 1.0,
+    "man": 0.0,
+    "king": 1.0,
+    "bread": 1.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 1.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 1.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.39354838709677403,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.27544142799908206,
+    "studied_minus_unrelated": 0.3012948137534001
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 40
+    },
+    "window": {
+     "window": 40
+    },
+    "king": {
+     "king": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=7 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 7,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.9943548387096774,
+     "lure": 0.001881720430107527,
+     "other": 0.003763440860215054
+    },
+    "9": {
+     "veridical": 0.964247311827957,
+     "lure": 0.03494623655913978,
+     "other": 0.0008064516129032258
+    },
+    "12": {
+     "veridical": 0.8989247311827957,
+     "lure": 0.10053763440860215,
+     "other": 0.0005376344086021505
+    },
+    "15": {
+     "veridical": 0.9155913978494624,
+     "lure": 0.08279569892473118,
+     "other": 0.0016129032258064516
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 0.0,
+    "rough": 1.0,
+    "slow": 0.09166666666666666,
+    "river": 0.475,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.11612903225806448,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.2781983477860375,
+    "studied_minus_unrelated": 0.3709274126430351
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 36,
+     "rest": 2,
+     "tired": 2
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=10 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 10,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.999731182795699,
+     "lure": 0.0,
+     "other": 0.00026881720430107527
+    },
+    "9": {
+     "veridical": 0.9973118279569892,
+     "lure": 0.0024193548387096775,
+     "other": 0.00026881720430107527
+    },
+    "12": {
+     "veridical": 0.9994623655913979,
+     "lure": 0.00026881720430107527,
+     "other": 0.00026881720430107527
+    },
+    "15": {
+     "veridical": 0.9978494623655914,
+     "lure": 0.001881720430107527,
+     "other": 0.00026881720430107527
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.058333333333333334,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.2815357258544213,
+    "studied_minus_unrelated": 0.44256418039042433
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 25,
+     "rest": 6,
+     "snooze": 3,
+     "bed": 2,
+     "tired": 2
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "coffee": 36,
+     "coaster": 1,
+     "lid": 1,
+     "measuring": 1,
+     "stein": 1
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=20 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 20,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.2879215540838732,
+    "studied_minus_unrelated": 0.5278448237636029
+   },
+   "examples_k15": {
+    "sleep": {
+     "nap": 6,
+     "dream": 5,
+     "drowsy": 4,
+     "peace": 4,
+     "bed": 3
+    },
+    "window": {
+     "door": 8,
+     "breeze": 4,
+     "sill": 4,
+     "glass": 3,
+     "ledge": 3
+    },
+    "king": {
+     "queen": 7,
+     "throne": 6,
+     "crown": 4,
+     "subjects": 4,
+     "chess": 3
+    },
+    "cup": {
+     "coffee": 8,
+     "straw": 6,
+     "handle": 5,
+     "goblet": 3,
+     "measuring": 3
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=50 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 50,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.2907844058697996,
+    "studied_minus_unrelated": 0.5588218839041382
+   },
+   "examples_k15": {
+    "sleep": {
+     "dream": 5,
+     "nap": 5,
+     "peace": 5,
+     "snore": 4,
+     "bed": 3
+    },
+    "window": {
+     "breeze": 5,
+     "ledge": 5,
+     "sill": 5,
+     "house": 4,
+     "open": 3
+    },
+    "king": {
+     "subjects": 7,
+     "george": 4,
+     "chess": 3,
+     "crown": 3,
+     "dictator": 3
+    },
+    "cup": {
+     "straw": 7,
+     "handle": 5,
+     "stein": 5,
+     "goblet": 4,
+     "coaster": 3
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=100 (GloVe)",
+   "spec": {
+    "kind": "modern",
+    "beta": 100,
+    "space": "glove"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.29048061010950016,
+    "studied_minus_unrelated": 0.5628948682031577
+   },
+   "examples_k15": {
+    "sleep": {
+     "dream": 6,
+     "peace": 5,
+     "doze": 4,
+     "nap": 4,
+     "snore": 4
+    },
+    "window": {
+     "breeze": 5,
+     "ledge": 5,
+     "sill": 5,
+     "house": 4,
+     "open": 3
+    },
+    "king": {
+     "subjects": 7,
+     "dictator": 5,
+     "chess": 4,
+     "george": 4,
+     "palace": 4
+    },
+    "cup": {
+     "straw": 7,
+     "handle": 5,
+     "stein": 5,
+     "goblet": 4,
+     "coaster": 3
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=1",
+   "spec": {
+    "kind": "modern",
+    "beta": 1,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.967741935483871,
+     "lure": 0.021505376344086023,
+     "other": 0.010752688172043012
+    },
+    "9": {
+     "veridical": 0.9247311827956989,
+     "lure": 0.06451612903225806,
+     "other": 0.010752688172043012
+    },
+    "12": {
+     "veridical": 0.8494623655913979,
+     "lure": 0.12903225806451613,
+     "other": 0.021505376344086023
+    },
+    "15": {
+     "veridical": 0.7634408602150538,
+     "lure": 0.22580645161290322,
+     "other": 0.010752688172043012
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 1.0,
+    "rough": 0.3333333333333333,
+    "slow": 1.0,
+    "river": 0.0,
+    "window": 0.3333333333333333,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.6666666666666666,
+    "bread": 0.6666666666666666,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.3333333333333333,
+    "girl": 0.6666666666666666,
+    "high": 0.0,
+    "anger": 0.3333333333333333,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.3333333333333333,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.3333333333333333,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.6659498207885304,
+    "pct_studied_below_unrelated": 0.030107526881720432,
+    "lure_minus_unrelated": 0.2056356261489199,
+    "studied_minus_unrelated": 0.17555216670248613
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 40
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "drink": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=2",
+   "spec": {
+    "kind": "modern",
+    "beta": 2,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.978494623655914,
+     "lure": 0.021505376344086023,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 0.956989247311828,
+     "lure": 0.043010752688172046,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 0.8709677419354839,
+     "lure": 0.11827956989247312,
+     "other": 0.010752688172043012
+    },
+    "15": {
+     "veridical": 0.8387096774193549,
+     "lure": 0.15053763440860216,
+     "other": 0.010752688172043012
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 1.0,
+    "needle": 0.6666666666666666,
+    "rough": 0.3333333333333333,
+    "slow": 1.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.3333333333333333,
+    "bread": 0.6666666666666666,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.6666666666666666,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.41505376344086015,
+    "pct_studied_below_unrelated": 0.002150537634408602,
+    "lure_minus_unrelated": 0.2094622141869638,
+    "studied_minus_unrelated": 0.2201671968387586
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 40
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "drink": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=3",
+   "spec": {
+    "kind": "modern",
+    "beta": 3,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 0.989247311827957,
+     "lure": 0.010752688172043012,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 0.978494623655914,
+     "lure": 0.021505376344086023,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 0.9032258064516129,
+     "lure": 0.08602150537634409,
+     "other": 0.010752688172043012
+    },
+    "15": {
+     "veridical": 0.9139784946236559,
+     "lure": 0.08602150537634409,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.6666666666666666,
+    "needle": 0.6666666666666666,
+    "rough": 0.0,
+    "slow": 1.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.3333333333333333,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.14551971326164873,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.21324018514233398,
+    "studied_minus_unrelated": 0.279682212344171
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 40
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "drink": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=5",
+   "spec": {
+    "kind": "modern",
+    "beta": 5,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 0.9991935483870967,
+     "lure": 0.0008064516129032258,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 0.978494623655914,
+     "lure": 0.010752688172043012,
+     "other": 0.010752688172043012
+    },
+    "15": {
+     "veridical": 0.989516129032258,
+     "lure": 0.010483870967741936,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.325,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.22056340454352066,
+    "studied_minus_unrelated": 0.41522688610020064
+   },
+   "examples_k15": {
+    "sleep": {
+     "snooze": 40
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=7",
+   "spec": {
+    "kind": "modern",
+    "beta": 7,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 0.989247311827957,
+     "lure": 0.0,
+     "other": 0.010752688172043012
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.22741396554358595,
+    "studied_minus_unrelated": 0.5234716361649483
+   },
+   "examples_k15": {
+    "sleep": {
+     "snooze": 40
+    },
+    "window": {
+     "door": 40
+    },
+    "king": {
+     "queen": 40
+    },
+    "cup": {
+     "coffee": 40
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=10",
+   "spec": {
+    "kind": "modern",
+    "beta": 10,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.23637419772648943,
+    "studied_minus_unrelated": 0.6197867712559205
+   },
+   "examples_k15": {
+    "sleep": {
+     "snooze": 30,
+     "awake": 9,
+     "slumber": 1
+    },
+    "window": {
+     "door": 39,
+     "sash": 1
+    },
+    "king": {
+     "queen": 37,
+     "throne": 3
+    },
+    "cup": {
+     "coffee": 35,
+     "drink": 4,
+     "tea": 1
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=20",
+   "spec": {
+    "kind": "modern",
+    "beta": 20,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.25343818220009734,
+    "studied_minus_unrelated": 0.7232907855928061
+   },
+   "examples_k15": {
+    "sleep": {
+     "awake": 10,
+     "slumber": 8,
+     "drowsy": 5,
+     "snooze": 5,
+     "peace": 4
+    },
+    "window": {
+     "door": 8,
+     "glass": 6,
+     "frame": 5,
+     "sill": 5,
+     "sash": 3
+    },
+    "king": {
+     "queen": 9,
+     "throne": 7,
+     "prince": 6,
+     "crown": 4,
+     "leader": 3
+    },
+    "cup": {
+     "drink": 8,
+     "coffee": 7,
+     "soup": 5,
+     "mug": 3,
+     "saucer": 3
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=50",
+   "spec": {
+    "kind": "modern",
+    "beta": 50,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.26181392500162687,
+    "studied_minus_unrelated": 0.7608336126455774
+   },
+   "examples_k15": {
+    "sleep": {
+     "peace": 5,
+     "slumber": 5,
+     "drowsy": 4,
+     "snooze": 4,
+     "tired": 4
+    },
+    "window": {
+     "sill": 6,
+     "frame": 4,
+     "glass": 4,
+     "screen": 4,
+     "view": 4
+    },
+    "king": {
+     "leader": 6,
+     "england": 5,
+     "throne": 5,
+     "prince": 4,
+     "dictator": 3
+    },
+    "cup": {
+     "coaster": 5,
+     "coffee": 5,
+     "goblet": 5,
+     "saucer": 4,
+     "straw": 4
+    }
+   }
+  },
+  {
+   "model": "Modern \u03b2=100",
+   "spec": {
+    "kind": "modern",
+    "beta": 100,
+    "space": "codes"
+   },
+   "recall_by_length": {
+    "3": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "6": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "9": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "12": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    },
+    "15": {
+     "veridical": 1.0,
+     "lure": 0.0,
+     "other": 0.0
+    }
+   },
+   "false_recall_by_list_k15": {
+    "sleep": 0.0,
+    "chair": 0.0,
+    "doctor": 0.0,
+    "sweet": 0.0,
+    "mountain": 0.0,
+    "needle": 0.0,
+    "rough": 0.0,
+    "slow": 0.0,
+    "river": 0.0,
+    "window": 0.0,
+    "soft": 0.0,
+    "cold": 0.0,
+    "music": 0.0,
+    "man": 0.0,
+    "king": 0.0,
+    "bread": 0.0,
+    "spider": 0.0,
+    "thief": 0.0,
+    "foot": 0.0,
+    "girl": 0.0,
+    "high": 0.0,
+    "anger": 0.0,
+    "black": 0.0,
+    "cup": 0.0,
+    "fruit": 0.0,
+    "smell": 0.0,
+    "shirt": 0.0,
+    "trash": 0.0,
+    "car": 0.0,
+    "lion": 0.0,
+    "pen": 0.0
+   },
+   "recognition": {
+    "pct_studied_below_lure": 0.0,
+    "pct_studied_below_unrelated": 0.0,
+    "lure_minus_unrelated": 0.2621765915204391,
+    "studied_minus_unrelated": 0.7657091043358792
+   },
+   "examples_k15": {
+    "sleep": {
+     "drowsy": 5,
+     "peace": 5,
+     "slumber": 5,
+     "tired": 4,
+     "wake": 4
+    },
+    "window": {
+     "sill": 6,
+     "frame": 4,
+     "glass": 4,
+     "house": 4,
+     "screen": 4
+    },
+    "king": {
+     "leader": 7,
+     "england": 5,
+     "throne": 4,
+     "chess": 3,
+     "dictator": 3
+    },
+    "cup": {
+     "goblet": 6,
+     "coaster": 5,
+     "coffee": 4,
+     "saucer": 4,
+     "straw": 4
+    }
+   }
+  }
+ ]
+}

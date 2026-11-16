@@ -1,0 +1,522 @@
+{
+ "matched_budget": [
+  {
+   "N": 64,
+   "synapses": 2016,
+   "K": 31,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 64,
+   "synapses": 2016,
+   "K": 31,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 64,
+   "synapses": 2016,
+   "K": 31,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  },
+  {
+   "N": 128,
+   "synapses": 8128,
+   "K": 63,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 128,
+   "synapses": 8128,
+   "K": 63,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 128,
+   "synapses": 8128,
+   "K": 63,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  },
+  {
+   "N": 256,
+   "synapses": 32640,
+   "K": 127,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 256,
+   "synapses": 32640,
+   "K": 127,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 256,
+   "synapses": 32640,
+   "K": 127,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  },
+  {
+   "N": 512,
+   "synapses": 130816,
+   "K": 255,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 512,
+   "synapses": 130816,
+   "K": 255,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 512,
+   "synapses": 130816,
+   "K": 255,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  }
+ ],
+ "per_synapse": [
+  {
+   "model": "Modern \u03b2=8",
+   "N": 8,
+   "capacity": 5.47722557505166,
+   "lower_bound": false,
+   "synapses": 43.81780460041328,
+   "memories_per_synapse": 0.125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 8,
+   "capacity": 5.47722557505166,
+   "lower_bound": false,
+   "synapses": 43.81780460041328,
+   "memories_per_synapse": 0.125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 8,
+   "capacity": 5.26736262069075,
+   "lower_bound": false,
+   "synapses": 42.138900965526,
+   "memories_per_synapse": 0.125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 12,
+   "capacity": 26.147885739734047,
+   "lower_bound": false,
+   "synapses": 313.77462887680855,
+   "memories_per_synapse": 0.08333333333333334,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 12,
+   "capacity": 70.95126532717005,
+   "lower_bound": false,
+   "synapses": 851.4151839260405,
+   "memories_per_synapse": 0.08333333333333334,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 12,
+   "capacity": 36.40199553371168,
+   "lower_bound": false,
+   "synapses": 436.82394640454015,
+   "memories_per_synapse": 0.08333333333333333,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Classical",
+   "N": 16,
+   "capacity": 2.379565578968772,
+   "lower_bound": false,
+   "synapses": 120,
+   "memories_per_synapse": 0.0198297131580731,
+   "bits_per_synapse": 0.3172754105291696
+  },
+  {
+   "model": "Dense n=3",
+   "N": 16,
+   "capacity": 7.789177444921345,
+   "lower_bound": false,
+   "synapses": 124.62683911874151,
+   "memories_per_synapse": 0.0625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Dense n=4",
+   "N": 16,
+   "capacity": 11.958260743101397,
+   "lower_bound": false,
+   "synapses": 191.33217188962234,
+   "memories_per_synapse": 0.0625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 16,
+   "capacity": 48.40441906196566,
+   "lower_bound": false,
+   "synapses": 774.4707049914506,
+   "memories_per_synapse": 0.0625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 16,
+   "capacity": 68.55409804985366,
+   "lower_bound": false,
+   "synapses": 1096.8655687976586,
+   "memories_per_synapse": 0.0625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 16,
+   "capacity": 35.88440287385994,
+   "lower_bound": false,
+   "synapses": 574.150445981759,
+   "memories_per_synapse": 0.0625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 20,
+   "capacity": 68.12703239629114,
+   "lower_bound": false,
+   "synapses": 1362.540647925823,
+   "memories_per_synapse": 0.049999999999999996,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 20,
+   "capacity": 693.3591446651634,
+   "lower_bound": false,
+   "synapses": 13867.182893303268,
+   "memories_per_synapse": 0.049999999999999996,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 20,
+   "capacity": 609.0000000000001,
+   "lower_bound": false,
+   "synapses": 12180.000000000002,
+   "memories_per_synapse": 0.05,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 24,
+   "capacity": 81.51462116317153,
+   "lower_bound": false,
+   "synapses": 1956.3509079161167,
+   "memories_per_synapse": 0.041666666666666664,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 24,
+   "capacity": 15024.059637794295,
+   "lower_bound": false,
+   "synapses": 360577.4313070631,
+   "memories_per_synapse": 0.041666666666666664,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 24,
+   "capacity": 8191.9999999999945,
+   "lower_bound": false,
+   "synapses": 196607.99999999988,
+   "memories_per_synapse": 0.041666666666666664,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Classical",
+   "N": 32,
+   "capacity": 5.206739342870827,
+   "lower_bound": false,
+   "synapses": 496,
+   "memories_per_synapse": 0.01049745835256215,
+   "bits_per_synapse": 0.3359186672819888
+  },
+  {
+   "model": "Dense n=3",
+   "N": 32,
+   "capacity": 38.72062557357355,
+   "lower_bound": false,
+   "synapses": 1239.0600183543536,
+   "memories_per_synapse": 0.03125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Dense n=4",
+   "N": 32,
+   "capacity": 156.13868197789193,
+   "lower_bound": false,
+   "synapses": 4996.437823292542,
+   "memories_per_synapse": 0.03125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 32,
+   "capacity": 91.88650114340787,
+   "lower_bound": false,
+   "synapses": 2940.368036589052,
+   "memories_per_synapse": 0.03125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 32,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 4194304.0,
+   "memories_per_synapse": 0.03125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 32,
+   "capacity": 104031.96851722861,
+   "lower_bound": true,
+   "synapses": 3329022.9925513156,
+   "memories_per_synapse": 0.03125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 40,
+   "capacity": 95.43400719309217,
+   "lower_bound": false,
+   "synapses": 3817.3602877236867,
+   "memories_per_synapse": 0.025,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 40,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 5242880.0,
+   "memories_per_synapse": 0.025,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 40,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 5242880.0,
+   "memories_per_synapse": 0.025,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 48,
+   "capacity": 98.0350896266702,
+   "lower_bound": false,
+   "synapses": 4705.68430208017,
+   "memories_per_synapse": 0.020833333333333332,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 48,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 6291456.0,
+   "memories_per_synapse": 0.020833333333333332,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 48,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 6291456.0,
+   "memories_per_synapse": 0.020833333333333332,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Classical",
+   "N": 64,
+   "capacity": 8.802840841123947,
+   "lower_bound": false,
+   "synapses": 2016,
+   "memories_per_synapse": 0.004366488512462276,
+   "bits_per_synapse": 0.27945526479758565
+  },
+  {
+   "model": "Dense n=3",
+   "N": 64,
+   "capacity": 173.26858476036273,
+   "lower_bound": false,
+   "synapses": 11089.189424663215,
+   "memories_per_synapse": 0.015625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Dense n=4",
+   "N": 64,
+   "capacity": 1837.678139265581,
+   "lower_bound": false,
+   "synapses": 117611.40091299718,
+   "memories_per_synapse": 0.015625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 64,
+   "capacity": 111.00045468609721,
+   "lower_bound": false,
+   "synapses": 7104.029099910222,
+   "memories_per_synapse": 0.015625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 64,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 8388608.0,
+   "memories_per_synapse": 0.015625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 64,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 8388608.0,
+   "memories_per_synapse": 0.015625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Classical",
+   "N": 128,
+   "capacity": 15.590064208682415,
+   "lower_bound": false,
+   "synapses": 8128,
+   "memories_per_synapse": 0.001918068923312305,
+   "bits_per_synapse": 0.24551282218397505
+  },
+  {
+   "model": "Dense n=3",
+   "N": 128,
+   "capacity": 836.4867265181673,
+   "lower_bound": false,
+   "synapses": 107070.30099432541,
+   "memories_per_synapse": 0.0078125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Dense n=4",
+   "N": 128,
+   "capacity": 16721.44647493179,
+   "lower_bound": false,
+   "synapses": 2140345.148791269,
+   "memories_per_synapse": 0.0078125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 128,
+   "capacity": 129.38221168741958,
+   "lower_bound": false,
+   "synapses": 16560.923095989707,
+   "memories_per_synapse": 0.0078125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 128,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 16777216.0,
+   "memories_per_synapse": 0.0078125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 128,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 16777216.0,
+   "memories_per_synapse": 0.0078125,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Classical",
+   "N": 256,
+   "capacity": 30.669269003821075,
+   "lower_bound": false,
+   "synapses": 32640,
+   "memories_per_synapse": 0.0009396222121268712,
+   "bits_per_synapse": 0.24054328630447902
+  },
+  {
+   "model": "Dense n=3",
+   "N": 256,
+   "capacity": 3755.8785922870265,
+   "lower_bound": false,
+   "synapses": 961504.9196254788,
+   "memories_per_synapse": 0.00390625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Dense n=4",
+   "N": 256,
+   "capacity": 32768.0,
+   "lower_bound": true,
+   "synapses": 8388608.0,
+   "memories_per_synapse": 0.00390625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=8",
+   "N": 256,
+   "capacity": 130.2412989520126,
+   "lower_bound": false,
+   "synapses": 33341.77253171523,
+   "memories_per_synapse": 0.00390625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=32",
+   "N": 256,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 33554432.0,
+   "memories_per_synapse": 0.00390625,
+   "bits_per_synapse": 1.0
+  },
+  {
+   "model": "Modern \u03b2=128",
+   "N": 256,
+   "capacity": 131072.0,
+   "lower_bound": true,
+   "synapses": 33554432.0,
+   "memories_per_synapse": 0.00390625,
+   "bits_per_synapse": 1.0
+  }
+ ]
+}

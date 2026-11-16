@@ -1,0 +1,52 @@
+{'related_pair_cosine': 0.53692578125, 'random_pair_cosine': 0.01848046875, 'example_related_pairs': [('allied', 'forces'), ('buddy', 'bobby'), ('swiss', 'austrian'), ('commission', 'committee'), ('exact', 'precise'), ('light', 'dark'), ('reaffirmed', 'reiterated'), ('viewers', 'listeners'), ('transmission', 'transmissions'), ('contestants', 'contestant'), ('sleep', 'sleeping'), ('revolution', 'revolutionary')]}
+Classical 8 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 0.99}
+Dense n=4 8 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=3 8 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=4 16 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=3 16 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Classical 16 {'auto_recurrent': 0.82, 'auto_onestep': 0.89, 'hetero_related': 0.86, 'hetero_unrelated': 0.82}
+Dense n=4 32 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=3 32 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=4 64 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=3 64 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Classical 32 {'auto_recurrent': 0.11, 'auto_onestep': 0.22, 'hetero_related': 0.23, 'hetero_unrelated': 0.23}
+Dense n=4 128 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=3 128 {'auto_recurrent': 0.98, 'auto_onestep': 0.98, 'hetero_related': 0.99, 'hetero_unrelated': 0.98}
+Classical 64 {'auto_recurrent': 0.0, 'auto_onestep': 0.0, 'hetero_related': 0.0, 'hetero_unrelated': 0.0}
+Modern β=10 8 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 16 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 32 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 64 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 128 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 256 {'auto_recurrent': 0.03, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 512 {'auto_recurrent': 0.03, 'auto_onestep': 0.97, 'hetero_related': 0.92, 'hetero_unrelated': 0.95}
+Modern β=10 1024 {'auto_recurrent': 0.03, 'auto_onestep': 0.07, 'hetero_related': 0.05, 'hetero_unrelated': 0.07}
+Dense n=4 256 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=10 2048 {'auto_recurrent': 0.03, 'auto_onestep': 0.0, 'hetero_related': 0.0, 'hetero_unrelated': 0.0}
+Modern β=30 8 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 16 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 32 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 64 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 128 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 256 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 512 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 1024 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 2048 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=30 4096 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 8 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 16 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 32 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 64 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 128 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 256 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 512 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 1024 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Modern β=100 2048 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=4 512 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 0.97, 'hetero_unrelated': 1.0}
+Modern β=100 4096 {'auto_recurrent': 1.0, 'auto_onestep': 1.0, 'hetero_related': 1.0, 'hetero_unrelated': 1.0}
+Dense n=3 256 {'auto_recurrent': 0.53, 'auto_onestep': 0.65, 'hetero_related': 0.49, 'hetero_unrelated': 0.47}
+Dense n=3 512 {'auto_recurrent': 0.02, 'auto_onestep': 0.01, 'hetero_related': 0.02, 'hetero_unrelated': 0.03}
+Dense n=4 1024 {'auto_recurrent': 0.79, 'auto_onestep': 0.91, 'hetero_related': 0.81, 'hetero_unrelated': 0.98}
+Dense n=4 2048 {'auto_recurrent': 0.25, 'auto_onestep': 0.47, 'hetero_related': 0.23, 'hetero_unrelated': 0.79}
+Dense n=4 4096 {'auto_recurrent': 0.02, 'auto_onestep': 0.04, 'hetero_related': 0.0, 'hetero_unrelated': 0.45}
+saved /Users/sohamc/Desktop/Semester 7/Introduction to Neural and Cognitive Modelling/Project - Hopfield Associative Memory/modern-hopfield-memory/results/exp3_words.json

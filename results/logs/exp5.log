@@ -1,0 +1,13 @@
+{'N': 64, 'synapses': 2016, 'K': 31, 'model': 'Classical', 'success': 0.0}
+{'N': 64, 'synapses': 2016, 'K': 31, 'model': 'Dense n=3', 'success': 1.0}
+{'N': 64, 'synapses': 2016, 'K': 31, 'model': 'Modern β=32', 'success': 1.0}
+{'N': 128, 'synapses': 8128, 'K': 63, 'model': 'Classical', 'success': 0.0}
+{'N': 128, 'synapses': 8128, 'K': 63, 'model': 'Dense n=3', 'success': 1.0}
+{'N': 128, 'synapses': 8128, 'K': 63, 'model': 'Modern β=32', 'success': 1.0}
+{'N': 256, 'synapses': 32640, 'K': 127, 'model': 'Classical', 'success': 0.0}
+{'N': 256, 'synapses': 32640, 'K': 127, 'model': 'Dense n=3', 'success': 1.0}
+{'N': 256, 'synapses': 32640, 'K': 127, 'model': 'Modern β=32', 'success': 1.0}
+{'N': 512, 'synapses': 130816, 'K': 255, 'model': 'Classical', 'success': 0.0}
+{'N': 512, 'synapses': 130816, 'K': 255, 'model': 'Dense n=3', 'success': 1.0}
+{'N': 512, 'synapses': 130816, 'K': 255, 'model': 'Modern β=32', 'success': 1.0}
+saved /Users/sohamc/Desktop/Semester 7/Introduction to Neural and Cognitive Modelling/Project - Hopfield Associative Memory/modern-hopfield-memory/results/exp5_synapses.json

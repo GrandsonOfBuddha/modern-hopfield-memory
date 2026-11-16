@@ -1,0 +1,790 @@
+{
+ "exp1": {
+  "capacity": {
+   "Modern \u03b2=8": {
+    "8": [
+     5.5,
+     false
+    ],
+    "12": [
+     26.1,
+     false
+    ],
+    "16": [
+     48.4,
+     false
+    ],
+    "20": [
+     68.1,
+     false
+    ],
+    "24": [
+     81.5,
+     false
+    ],
+    "32": [
+     91.9,
+     false
+    ],
+    "40": [
+     95.4,
+     false
+    ],
+    "48": [
+     98.0,
+     false
+    ],
+    "64": [
+     111.0,
+     false
+    ],
+    "128": [
+     129.4,
+     false
+    ],
+    "256": [
+     130.2,
+     false
+    ]
+   },
+   "Modern \u03b2=32": {
+    "8": [
+     5.5,
+     false
+    ],
+    "12": [
+     71.0,
+     false
+    ],
+    "16": [
+     68.6,
+     false
+    ],
+    "20": [
+     693.4,
+     false
+    ],
+    "24": [
+     15024.1,
+     false
+    ],
+    "32": [
+     131072.0,
+     true
+    ],
+    "40": [
+     131072.0,
+     true
+    ],
+    "48": [
+     131072.0,
+     true
+    ],
+    "64": [
+     131072.0,
+     true
+    ],
+    "128": [
+     131072.0,
+     true
+    ],
+    "256": [
+     131072.0,
+     true
+    ]
+   },
+   "Modern \u03b2=128": {
+    "8": [
+     5.3,
+     false
+    ],
+    "12": [
+     36.4,
+     false
+    ],
+    "16": [
+     35.9,
+     false
+    ],
+    "20": [
+     609.0,
+     false
+    ],
+    "24": [
+     8192.0,
+     false
+    ],
+    "32": [
+     104032.0,
+     true
+    ],
+    "40": [
+     131072.0,
+     true
+    ],
+    "48": [
+     131072.0,
+     true
+    ],
+    "64": [
+     131072.0,
+     true
+    ],
+    "128": [
+     131072.0,
+     true
+    ],
+    "256": [
+     131072.0,
+     true
+    ]
+   },
+   "Classical": {
+    "16": [
+     2.4,
+     false
+    ],
+    "32": [
+     5.2,
+     false
+    ],
+    "64": [
+     8.8,
+     false
+    ],
+    "128": [
+     15.6,
+     false
+    ],
+    "256": [
+     30.7,
+     false
+    ]
+   },
+   "Dense n=3": {
+    "16": [
+     7.8,
+     false
+    ],
+    "32": [
+     38.7,
+     false
+    ],
+    "64": [
+     173.3,
+     false
+    ],
+    "128": [
+     836.5,
+     false
+    ],
+    "256": [
+     3755.9,
+     false
+    ]
+   },
+   "Dense n=4": {
+    "16": [
+     12.0,
+     false
+    ],
+    "32": [
+     156.1,
+     false
+    ],
+    "64": [
+     1837.7,
+     false
+    ],
+    "128": [
+     16721.4,
+     false
+    ],
+    "256": [
+     32768.0,
+     true
+    ]
+   }
+  },
+  "slopes": {
+   "Modern \u03b2=8 (log K per neuron)": 0.006228092890420984,
+   "Modern \u03b2=32 (log K per neuron)": 0.45260631716546534,
+   "Modern \u03b2=128 (log K per neuron)": 0.4375915636627405,
+   "Classical": 0.8510935981912214,
+   "Dense n=3": 2.2073137712188444,
+   "Dense n=4": 3.371540647322284
+  }
+ },
+ "exp2": {
+  "capacity": {
+   "Classical": {
+    "noise": 0.0,
+    "occlude": 0.0
+   },
+   "Dense n=4": {
+    "noise": 0.0,
+    "occlude": 0.0
+   },
+   "Dense n=8": {
+    "noise": 11.010567954531432,
+    "occlude": 0.0
+   },
+   "Dense n=16": {
+    "noise": 89.08987181403394,
+    "occlude": 0.0
+   },
+   "Modern \u03b2=30": {
+    "noise": 70.71067811865471,
+    "occlude": 0.0
+   },
+   "Modern \u03b2=100": {
+    "noise": 6674.19927085017,
+    "occlude": 19.999999999999996
+   },
+   "Modern \u03b2=300": {
+    "noise": 20000.0,
+    "occlude": 49.99999999999999
+   },
+   "Modern \u03b2=1000": {
+    "noise": 20000.0,
+    "occlude": 49.99999999999999
+   },
+   "Nearest neighbour": {
+    "noise": 20000.0,
+    "occlude": 49.99999999999999
+   }
+  },
+  "occlude_confusions_beta300": [
+   [
+    2,
+    1,
+    37
+   ],
+   [
+    6,
+    1,
+    36
+   ],
+   [
+    0,
+    7,
+    20
+   ],
+   [
+    9,
+    7,
+    17
+   ],
+   [
+    3,
+    1,
+    16
+   ],
+   [
+    2,
+    7,
+    16
+   ]
+  ]
+ },
+ "exp3": {
+  "Classical": {
+   "auto_recurrent": [
+    12,
+    false
+   ],
+   "auto_onestep": [
+    15,
+    false
+   ],
+   "hetero_related": [
+    13,
+    false
+   ],
+   "hetero_unrelated": [
+    12,
+    false
+   ]
+  },
+  "Dense n=3": {
+   "auto_recurrent": [
+    145,
+    false
+   ],
+   "auto_onestep": [
+    153,
+    false
+   ],
+   "hetero_related": [
+    144,
+    false
+   ],
+   "hetero_unrelated": [
+    143,
+    false
+   ]
+  },
+  "Dense n=4": {
+   "auto_recurrent": [
+    712,
+    false
+   ],
+   "auto_onestep": [
+    1040,
+    false
+   ],
+   "hetero_related": [
+    702,
+    false
+   ],
+   "hetero_unrelated": [
+    1371,
+    false
+   ]
+  },
+  "Modern \u03b2=10": {
+   "auto_recurrent": [
+    138,
+    false
+   ],
+   "auto_onestep": [
+    541,
+    false
+   ],
+   "hetero_related": [
+    520,
+    false
+   ],
+   "hetero_unrelated": [
+    533,
+    false
+   ]
+  },
+  "Modern \u03b2=30": {
+   "auto_recurrent": [
+    4096,
+    true
+   ],
+   "auto_onestep": [
+    4096,
+    true
+   ],
+   "hetero_related": [
+    4096,
+    true
+   ],
+   "hetero_unrelated": [
+    4096,
+    true
+   ]
+  },
+  "Modern \u03b2=100": {
+   "auto_recurrent": [
+    4096,
+    true
+   ],
+   "auto_onestep": [
+    4096,
+    true
+   ],
+   "hetero_related": [
+    4096,
+    true
+   ],
+   "hetero_unrelated": [
+    4096,
+    true
+   ]
+  }
+ },
+ "exp4": {
+  "models": {
+   "Classical": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.001,
+     "9": 0.002,
+     "12": 0.021,
+     "15": 0.02
+    },
+    "veridical_k15": 0.472,
+    "recog_lure_beats_studied": 0.309,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Dense n=3": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.022,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Dense n=4": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 0.494,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Dense n=8": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 0.492,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=1 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.29,
+     "9": 0.548,
+     "12": 0.516,
+     "15": 0.613
+    },
+    "veridical_k15": 0.323,
+    "recog_lure_beats_studied": 0.912,
+    "recog_unrel_beats_studied": 0.088
+   },
+   "Modern \u03b2=2 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.258,
+     "9": 0.516,
+     "12": 0.419,
+     "15": 0.548
+    },
+    "veridical_k15": 0.355,
+    "recog_lure_beats_studied": 0.865,
+    "recog_unrel_beats_studied": 0.056
+   },
+   "Modern \u03b2=3 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.161,
+     "9": 0.448,
+     "12": 0.387,
+     "15": 0.484
+    },
+    "veridical_k15": 0.452,
+    "recog_lure_beats_studied": 0.733,
+    "recog_unrel_beats_studied": 0.032
+   },
+   "Modern \u03b2=5 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.033,
+     "9": 0.165,
+     "12": 0.195,
+     "15": 0.323
+    },
+    "veridical_k15": 0.645,
+    "recog_lure_beats_studied": 0.394,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=7 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.002,
+     "9": 0.035,
+     "12": 0.101,
+     "15": 0.083
+    },
+    "veridical_k15": 0.916,
+    "recog_lure_beats_studied": 0.116,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=10 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.002,
+     "12": 0.0,
+     "15": 0.002
+    },
+    "veridical_k15": 0.998,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=20 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=50 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=100 (GloVe)": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=1": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.022,
+     "9": 0.065,
+     "12": 0.129,
+     "15": 0.226
+    },
+    "veridical_k15": 0.763,
+    "recog_lure_beats_studied": 0.666,
+    "recog_unrel_beats_studied": 0.03
+   },
+   "Modern \u03b2=2": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.022,
+     "9": 0.043,
+     "12": 0.118,
+     "15": 0.151
+    },
+    "veridical_k15": 0.839,
+    "recog_lure_beats_studied": 0.415,
+    "recog_unrel_beats_studied": 0.002
+   },
+   "Modern \u03b2=3": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.011,
+     "9": 0.022,
+     "12": 0.086,
+     "15": 0.086
+    },
+    "veridical_k15": 0.914,
+    "recog_lure_beats_studied": 0.146,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=5": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.001,
+     "12": 0.011,
+     "15": 0.01
+    },
+    "veridical_k15": 0.99,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=7": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=10": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=20": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=50": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   },
+   "Modern \u03b2=100": {
+    "lure_by_k": {
+     "3": 0.0,
+     "6": 0.0,
+     "9": 0.0,
+     "12": 0.0,
+     "15": 0.0
+    },
+    "veridical_k15": 1.0,
+    "recog_lure_beats_studied": 0.0,
+    "recog_unrel_beats_studied": 0.0
+   }
+  },
+  "lure_nearest_centroid": 19,
+  "n_lists": 31,
+  "beta3_corr_centroid": 0.48039859272472907,
+  "beta3_per_list": {
+   "sleep": 1.0,
+   "chair": 0.0,
+   "doctor": 0.0,
+   "sweet": 0.0,
+   "mountain": 1.0,
+   "needle": 1.0,
+   "rough": 1.0,
+   "slow": 1.0,
+   "river": 1.0,
+   "window": 1.0,
+   "soft": 0.0,
+   "cold": 1.0,
+   "music": 1.0,
+   "man": 0.0,
+   "king": 1.0,
+   "bread": 1.0,
+   "spider": 0.0,
+   "thief": 0.0,
+   "foot": 0.0,
+   "girl": 1.0,
+   "high": 0.0,
+   "anger": 0.0,
+   "black": 1.0,
+   "cup": 0.0,
+   "fruit": 1.0,
+   "smell": 0.0,
+   "shirt": 0.0,
+   "trash": 0.0,
+   "car": 1.0,
+   "lion": 0.0,
+   "pen": 0.0
+  }
+ },
+ "exp5": [
+  {
+   "N": 64,
+   "synapses": 2016,
+   "K": 31,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 64,
+   "synapses": 2016,
+   "K": 31,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 64,
+   "synapses": 2016,
+   "K": 31,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  },
+  {
+   "N": 128,
+   "synapses": 8128,
+   "K": 63,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 128,
+   "synapses": 8128,
+   "K": 63,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 128,
+   "synapses": 8128,
+   "K": 63,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  },
+  {
+   "N": 256,
+   "synapses": 32640,
+   "K": 127,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 256,
+   "synapses": 32640,
+   "K": 127,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 256,
+   "synapses": 32640,
+   "K": 127,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  },
+  {
+   "N": 512,
+   "synapses": 130816,
+   "K": 255,
+   "model": "Classical",
+   "success": 0.0
+  },
+  {
+   "N": 512,
+   "synapses": 130816,
+   "K": 255,
+   "model": "Dense n=3",
+   "success": 1.0
+  },
+  {
+   "N": 512,
+   "synapses": 130816,
+   "K": 255,
+   "model": "Modern \u03b2=32",
+   "success": 1.0
+  }
+ ]
+}

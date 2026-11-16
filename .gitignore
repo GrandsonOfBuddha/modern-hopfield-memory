@@ -1,0 +1,10 @@
+data/raw/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
