@@ -34,6 +34,7 @@ def fig_sharpness():
     ax.set_ylabel("pull of that memory\n(normalised)")
     ax.legend(ncol=2, frameon=False, loc="upper left")
     ax.set_ylim(-1.05, 1.05)
+    ax.set_xticks([-1, -0.5, 0, 0.5, 1])
     savefig(fig, "fig1_sharpness")
 
 

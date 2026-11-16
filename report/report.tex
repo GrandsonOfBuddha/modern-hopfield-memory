@@ -21,7 +21,7 @@ Code: \url{https://github.com/GrandsonOfBuddha/modern-hopfield-memory}}}
 \maketitle
 
 \begin{abstract}
-The classical Hopfield network stores only about $0.14N$ memories in $N$ neurons and produces spurious ``false memories''. Dense associative memory and the modern (softmax) Hopfield network claim to remove this limit. I compare the three models along a single \emph{sharpness} dial (linear, polynomial power $n$, inverse temperature $\beta$) on random patterns, MNIST digits and GloVe word vectors, using identical memories and cues. I reproduce the $0.14N$ limit, the $N^{n-1}$ scaling of dense memories and the exponential capacity of the modern network. On correlated data (MNIST, mean pairwise cosine 0.66) the classical network fails with only 10 stored digits, while a sharp modern network recalls noisy digits as well as a nearest-neighbour lookup up to 20\,000 digits. Counting synapses changes the picture: at an equal synapse budget the modern network stores only $\approx$3.6$\times$ more memories, not exponentially more. Hetero-association with unrelated pairs is \emph{easier} than auto-association, contrary to my prediction. Finally, a modern network on GloVe vectors reproduces the DRM false-memory effect, including its growth with list length, at low $\beta$ ($\beta\approx3$ gives 48\% false recall vs 46\% in humans), and sharp retrieval ($\beta\ge10$) removes it.
+The classical Hopfield network stores only about $0.14N$ memories in $N$ neurons and produces spurious ``false memories''. Dense associative memory and the modern (softmax) Hopfield network claim to remove this limit. I compare the three models along a single \emph{sharpness} dial (linear, polynomial power $n$, inverse temperature $\beta$) on random patterns, MNIST digits and GloVe word vectors, using identical memories and cues. I reproduce the $0.14N$ limit, the $N^{n-1}$ scaling of dense memories and the exponential capacity of the modern network. On correlated data (MNIST, mean pairwise cosine 0.66) the classical network fails with only 10 stored digits, while a sharp modern network recalls noisy digits as well as a nearest-neighbour lookup up to 20\,000 digits. Counting synapses changes the picture: at an equal synapse budget the modern network stores only about 4$\times$ more memories, not exponentially more. Hetero-association with unrelated pairs is \emph{easier} than auto-association, contrary to my prediction. Finally, a modern network on GloVe vectors reproduces the DRM false-memory effect, including its growth with list length, at low $\beta$ ($\beta\approx3$ gives 48\% false recall vs 46\% in humans), and sharp retrieval ($\beta\ge10$) removes it.
 \end{abstract}
 
 \section{Aim of the Modelling Exercise}
@@ -61,7 +61,7 @@ All binary models update neurons \emph{asynchronously} in random order until no 
 \end{figure*}
 The classical network reaches $K/N=0.12$ at $N=256$ (theory 0.138 for zero-noise cues), and capacity grows linearly with $N$ (Fig.~\ref{fig:cap}b, slope 0.85; finite-size effects lower it below 1). Dense memories scale polynomially: fitted log--log slopes 2.2 and 3.4 for $n=3,4$, close to the predicted $n-1$~\cite{krotov16}. For the modern network capacity exceeded the largest tested $K$ ($2^{17}$) already at $N\ge32$ for $\beta\ge32$, and below that it grows exponentially ($\ln K\approx0.45N$ for $N\le24$ in $\log K$ per neuron). A new observation is that a \emph{blunt} modern network ($\beta=8$) saturates at $\approx$130 memories regardless of $N$: when $\beta$ is too small the softmax cannot single out one of many memories, so sharpness, not size, sets the limit.
 
-Counting synapses removes most of the advantage (Fig.~\ref{fig:cap}c). The classical network stores $\approx0.12N$ memories in $N^2/2$ synapses ($\approx0.24/N$ per synapse); a two-layer modern network uses exactly $N$ synapses per memory ($1/N$), a constant $\approx$4$\times$ better. In the matched-budget test the dense and modern networks recalled all $(N{-}1)/2$ patterns (success 1.00 for $N=64$--512) while the classical network recalled none (0.00). Exponential capacity is therefore capacity \emph{per feature neuron}; per synapse the gain is a constant factor.
+Counting synapses removes most of the advantage (Fig.~\ref{fig:cap}c). The classical network stores $\approx0.12N$ memories in $N^2/2$ synapses ($\approx0.24/N$ per synapse); a two-layer modern network uses exactly $N$ synapses per memory ($1/N$), a constant 3.6--4.2$\times$ better for $N=64$--256. In the matched-budget test the dense and modern networks recalled all $(N{-}1)/2$ patterns (success 1.00 for $N=64$--512) while the classical network recalled none (0.00). Exponential capacity is therefore capacity \emph{per feature neuron}; per synapse the gain is a constant factor.
 
 \subsection{Handwritten digits (Q1, Q2)}
 \begin{figure*}[t]
@@ -92,8 +92,30 @@ Word codes are correlated, so the classical network holds only 12 words ($0.02N$
 \end{figure*}
 In GloVe space the lure is the closest word of the whole lexicon to the average of its list for 19/31 lists, so a network that \emph{blends} the list should ``remember'' the lure. This is what the modern network does at low $\beta$ (Fig.~\ref{fig:drm}a): false recall rises with list length (for $\beta=3$: 0, 0.16, 0.45, 0.39, 0.48 for $k=3,\ldots,15$), reproducing the list-length effect of Robinson \& Roediger~\cite{robinson97}. At $\beta=3$ mean false recall (0.48) matches the human mean (0.46~\cite{stadler99}). Increasing $\beta$ trades false memory for veridical recall, with a sharp transition between $\beta=5$ and 10, beyond which the lure is never recalled (Fig.~\ref{fig:drm}b). Recognition shows the same dial: at $\beta=1$ the lure is more familiar than 91\% of the studied words, at $\beta\ge10$ than none. The classical network shows weak false recall (0.02 at $k=15$) and moderate false recognition (0.31); dense networks show none. On binary codes the modern network produced much less false recall (0.23 at $\beta=1$), because hashing distorts the geometry of the centroid (the lure is closest to the code centroid in only 5/31 lists). Per list, the model is all-or-none: it falsely recalls \emph{window} (human 0.65) but also \emph{king} (human 0.10, the lowest~\cite{stadler99}) and never \emph{cup}, whose GloVe neighbours are about sport (\emph{world cup}).
 
+\begin{table}[t]
+\caption{Main results (capacity = largest $K$ with $\ge$90\% recall; $\beta$ columns are modern networks; NN = nearest neighbour)}
+\label{tab:sum}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & Classical & Dense $n{=}4$ & $\beta{=}30$/32 & $\beta{\ge}300$ \\
+\midrule
+Random, $K$ at $N{=}64$ & 8.8 & 1\,838 & $\ge$131\,072 & -- \\
+Random, growth with $N$ & $N^{0.85}$ & $N^{3.4}$ & $\ln K{\approx}0.45N$ & -- \\
+MNIST, 20\% noise & 0 & 0 & 71 & $\ge$20\,000 \\
+MNIST, half occluded & 0 & 0 & 0 & 50 (= NN) \\
+Words, auto (1 step) & 15 & 1\,040 & $\ge$4\,096 & -- \\
+Words, hetero unrel.\ & 12 & 1\,371 & $\ge$4\,096 & -- \\
+Words, hetero related & 13 & 702 & $\ge$4\,096 & -- \\
+\midrule
+DRM false recall & 0.02 & 0 & \multicolumn{2}{c}{$\beta{=}3$: 0.48, $\beta{\ge}10$: 0 (human 0.46)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \section{Discussion and Conclusion}
-\textbf{Q1.} The three published capacity results reproduce, but the ``exponential'' capacity of modern networks is capacity per feature neuron: each memory needs its own hidden neuron and $N$ synapses, so at equal synaptic cost the gain over the classical network is a constant factor of $\approx$4. On realistic, correlated data the decisive variable is sharpness: the classical network failed with 10 digits, while $\beta\ge300$ matched a perfect nearest-neighbour lookup; and too small a $\beta$ caps capacity whatever the network size.
+\textbf{Q1.} The three published capacity results reproduce (Table~\ref{tab:sum}), but the ``exponential'' capacity of modern networks is capacity per feature neuron: each memory needs its own hidden neuron and $N$ synapses, so at equal synaptic cost the gain over the classical network is a constant factor of $\approx$4. On realistic, correlated data the decisive variable is sharpness: the classical network failed with 10 digits, while $\beta\ge300$ matched a perfect nearest-neighbour lookup; and too small a $\beta$ caps capacity whatever the network size.
 
 \textbf{Q2.} Sharpness controls the kind of error. Blunt models make blends (spurious ``average'' states); sharp models make mix-ups with real, similar memories. In the DRM task a blending network reproduces three human findings: false recall of the lure at roughly the human rate, its growth with list length, and lure familiarity comparable to studied words. A sharp network removes false memory entirely. Humans thus behave like a moderately blunt memory, which trades exact recall for gist, consistent with global-matching accounts~\cite{arndt98}. The model does not capture list-to-list variability (king), which depends on associative norms~\cite{roediger95} rather than co-occurrence statistics.
 
@@ -101,7 +123,7 @@ In GloVe space the lure is the closest word of the whole lexicon to the average 
 
 \textbf{Novelty.} (i) One controlled comparison of classical, dense and modern networks along a single sharpness dial, on identical memories and cues across random, image and word data; (ii) a synapse-matched comparison showing the modern advantage is a constant factor; (iii) the observation that blunt $\beta$ caps capacity independently of $N$; (iv) a modern-Hopfield account of DRM false recall and recognition with list-length and sharpness effects; (v) evidence that unrelated hetero-association is easier than auto-association on semantic data. \textbf{Limitations.} Binary word codes distort semantic geometry; the DRM recall readout is deterministic per list; free recall is modelled as independent random starts rather than a sequential search; sizes are small ($N\le784$).
 
-\textbf{Reproduced vs new.} Reproduced: the $0.14N$ limit~\cite{ags85}, $N^{n-1}$ scaling~\cite{krotov16}, exponential/one-step retrieval~\cite{ramsauer21}. Everything else is new. All models were implemented from the papers' equations in NumPy; the authors' repositories~\cite{krotov16,ramsauer21} were not used.
+\textbf{Reproduced vs new.} Reproduced: the $0.14N$ limit~\cite{ags85}, $N^{n-1}$ scaling~\cite{krotov16}, exponential/one-step retrieval~\cite{ramsauer21}. Everything else is new. All models were implemented from the papers' equations in NumPy~\cite{numpy} (figures with Matplotlib). The original authors do provide code (\url{https://github.com/DimaKrotov/Dense_Associative_Memory} and \url{https://github.com/ml-jku/hopfield-layers}), but it was not used or adapted.
 
 \section*{Code, Data and Reproducibility}
 Code, results and a live demo: \url{https://github.com/GrandsonOfBuddha/modern-hopfield-memory}. \texttt{run\_all.sh} regenerates every number and figure ($\approx$40\,min on a laptop); MNIST and GloVe are downloaded automatically, and the 20\,000-word GloVe subset is included. The models have no trained weights: the stored patterns \emph{are} the weights and are regenerated from fixed random seeds.
@@ -126,6 +148,7 @@ This was a single-member project with no group partner; Soham Chatterjee is resp
 \bibitem{stadler99} M.~A.~Stadler, H.~L.~Roediger, and K.~B.~McDermott, ``Norms for word lists that create false memories,'' \emph{Mem.\ Cogn.}, vol.~27, no.~3, pp.~494--500, 1999.
 \bibitem{arndt98} J.~Arndt and E.~Hirshman, ``True and false recognition in MINERVA2: Explanations from a global matching perspective,'' \emph{J.\ Mem.\ Lang.}, vol.~39, no.~3, pp.~371--391, 1998.
 \bibitem{nelson04} D.~L.~Nelson, C.~L.~McEvoy, and T.~A.~Schreiber, ``The University of South Florida free association, rhyme, and word fragment norms,'' \emph{Behav.\ Res.\ Methods}, vol.~36, no.~3, pp.~402--407, 2004.
+\bibitem{numpy} C.~R.~Harris \emph{et al.}, ``Array programming with NumPy,'' \emph{Nature}, vol.~585, pp.~357--362, 2020.
 \end{thebibliography}
 
 \end{document}
