@@ -15,7 +15,7 @@
 \title{When Does Memory Break? Sharpness, Capacity and False Memories in Classical, Dense and Modern Hopfield Networks}
 
 \author{\IEEEauthorblockN{Soham Chatterjee (2023101092)}
-\IEEEauthorblockA{Introduction to Neural and Cognitive Modelling, 2026 --- Final project report\\
+\IEEEauthorblockA{Introduction to Neural and Cognitive Modelling (2026), Final Project Report\\
 Code: \url{https://github.com/GrandsonOfBuddha/modern-hopfield-memory}}}
 
 \maketitle
@@ -23,6 +23,10 @@ Code: \url{https://github.com/GrandsonOfBuddha/modern-hopfield-memory}}}
 \begin{abstract}
 The classical Hopfield network stores only about $0.14N$ memories in $N$ neurons and produces spurious ``false memories''. Dense associative memory and the modern (softmax) Hopfield network claim to remove this limit. I compare the three models along a single \emph{sharpness} dial (linear, polynomial power $n$, inverse temperature $\beta$) on random patterns, MNIST digits and GloVe word vectors, using identical memories and cues. I reproduce the $0.14N$ limit, the $N^{n-1}$ scaling of dense memories and the exponential capacity of the modern network. On correlated data (MNIST, mean pairwise cosine 0.66) the classical network fails with only 10 stored digits, while a sharp modern network recalls noisy digits as well as a nearest-neighbour lookup up to 20\,000 digits. Counting synapses changes the picture: at an equal synapse budget the modern network stores only about 4$\times$ more memories, not exponentially more. Hetero-association with unrelated pairs is \emph{easier} than auto-association, contrary to my prediction. Finally, a modern network on GloVe vectors reproduces the DRM false-memory effect, including its growth with list length, at low $\beta$ ($\beta\approx3$ gives 48\% false recall vs 46\% in humans), and sharp retrieval ($\beta\ge10$) removes it.
 \end{abstract}
+
+\begin{IEEEkeywords}
+Hopfield network, associative memory, dense associative memory, attention, capacity, false memory, DRM paradigm
+\end{IEEEkeywords}
 
 \section{Aim of the Modelling Exercise}
 To test, with one common set of tasks and cues, (\textbf{Q1}) how much the modern Hopfield networks can store and at what cost in synapses; (\textbf{Q2}) whether they still make false memories when memories are similar, as people do in the DRM paradigm; and (\textbf{Q3}) whether recalling a paired partner (hetero-association) is harder than restoring the item itself (auto-association). The unifying hypothesis is that one parameter, the \emph{sharpness} with which a cue selects the best-matching memory, controls all three.
@@ -59,7 +63,7 @@ All binary models update neurons \emph{asynchronously} in random order until no 
 \caption{E1/E5, random patterns, 10\% noisy cues. (a) Recall vs load at $N=64$. (b) Capacity vs $N$ (colours as in (a)); open triangles are lower bounds (never failed on the tested grid). (c) Memories per synapse $\times N$: the two-layer modern/dense network always pays $N$ synapses per memory.}
 \label{fig:cap}
 \end{figure*}
-The classical network reaches $K/N=0.12$ at $N=256$ (theory 0.138 for zero-noise cues), and capacity grows linearly with $N$ (Fig.~\ref{fig:cap}b, slope 0.85; finite-size effects lower it below 1). Dense memories scale polynomially: fitted log--log slopes 2.2 and 3.4 for $n=3,4$, close to the predicted $n-1$~\cite{krotov16}. For the modern network capacity exceeded the largest tested $K$ ($2^{17}$) already at $N\ge32$ for $\beta\ge32$, and below that it grows exponentially ($\ln K\approx0.45N$ for $N\le24$ in $\log K$ per neuron). A new observation is that a \emph{blunt} modern network ($\beta=8$) saturates at $\approx$130 memories regardless of $N$: when $\beta$ is too small the softmax cannot single out one of many memories, so sharpness, not size, sets the limit.
+The classical network reaches $K/N=0.12$ at $N=256$ (theory 0.138 for zero-noise cues), and capacity grows linearly with $N$ (Fig.~\ref{fig:cap}b, slope 0.85; finite-size effects lower it below 1). Dense memories scale polynomially: fitted log--log slopes 2.2 and 3.4 for $n=3,4$, close to the predicted $n-1$~\cite{krotov16}. For the modern network capacity exceeded the largest tested $K$ ($2^{17}$) already at $N\ge32$ for $\beta=32$ (and was at least $10^5$ for $\beta=128$); below that it grows exponentially, with $\ln K$ rising by $\approx0.45$ per added neuron for $N\le24$. A new observation is that a \emph{blunt} modern network ($\beta=8$) saturates at $\approx$130 memories regardless of $N$: when $\beta$ is too small the softmax cannot single out one of many memories, so sharpness, not size, sets the limit.
 
 Counting synapses removes most of the advantage (Fig.~\ref{fig:cap}c). The classical network stores $\approx0.12N$ memories in $N^2/2$ synapses ($\approx0.24/N$ per synapse); a two-layer modern network uses exactly $N$ synapses per memory ($1/N$), a constant 3.6--4.2$\times$ better for $N=64$--256. In the matched-budget test the dense and modern networks recalled all $(N{-}1)/2$ patterns (success 1.00 for $N=64$--512) while the classical network recalled none (0.00). Exponential capacity is therefore capacity \emph{per feature neuron}; per synapse the gain is a constant factor.
 
