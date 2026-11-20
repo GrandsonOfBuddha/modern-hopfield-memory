@@ -70,6 +70,7 @@ Or run single experiments from the repository root:
 | `experiments/exp4_drm.py` | DRM false recall and recognition | `results/exp4_drm.json` |
 | `experiments/exp5_synapses.py` | synapse-matched comparison (needs exp1) | `results/exp5_synapses.json` |
 | `experiments/make_figures.py` | all report figures | `figures/*.pdf`, `figures/*.png` |
+| `experiments/make_slide_figures.py` | larger versions of the figures for the slides | `figures/slides/*.png` |
 | `experiments/summarize.py` | prints every number quoted in the report | `results/summary.json` |
 
 Logs from the runs used in the report are in `results/logs/`.
